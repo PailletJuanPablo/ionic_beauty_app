@@ -1,0 +1,7 @@
+{
+  "name": "psiquevamos",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
