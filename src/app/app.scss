@@ -1,6 +1,5 @@
 // http://ionicframework.com/docs/theming/
 
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,3 +13,100 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+/* Custom fonts */
+
+@font-face {
+  font-family: Nova;
+  font-style: normal;
+  src: url(../assets/font/nova.ttf);
+}
+
+@font-face {
+  font-family: Nova;
+  font-style: bold;
+  src: url(../assets/font/nova_bold.otf);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+bold {
+  font-family: Nova !important;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fade {
+  animation: fadeInUp;
+  animation-duration: 700ms !important;
+  transition: all 500ms cubic-bezier(0.420, 0.000, 1.000, 1.000);
+  /* ease-in */
+}
+
+.fade1 {
+  animation: fadeInUp;
+  animation-duration: 900ms !important;
+  transition: all 500ms cubic-bezier(0.420, 0.000, 1.000, 1.000);
+  /* ease-in */
+}
+
+.fade2 {
+  animation: fadeInUp;
+  animation-duration: 1100ms !important;
+  transition: all 500ms cubic-bezier(0.420, 0.000, 1.000, 1.000);
+  /* ease-in */
+}
+
+.fade3 {
+  animation: fadeInUp;
+  animation-duration: 1300ms !important;
+  transition: all 500ms cubic-bezier(0.420, 0.000, 1.000, 1.000);
+  /* ease-in */
+}
+
+.medium {
+  animation-duration: 1;
+}
+
+.slow {
+  animation-duration: 1.8s;
+}
+
+.shadow {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.06), 0 0 8px rgba(0, 0, 0, 0.22)
+}
+
+.border {
+  border-radius: 10px;
+}
+
+.easing {
+  transition: all 500ms cubic-bezier(0.420, 0.000, 1.000, 1.000);
+  /* ease-in */
+}
+
+#logo {
+  text-align: center;
+  margin: 0px auto;
+  width: 75px;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}

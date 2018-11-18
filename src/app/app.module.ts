@@ -10,31 +10,29 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ComoVotarPageModule } from './../pages/como-votar/como-votar.module';
+import { RequisitosPageModule } from '../pages/requisitos/requisitos.module';
+import { ListaPageModule } from './../pages/lista/lista.module';
+import { SocialSharing } from '@ionic-native/social-sharing';
+import { MessagePageModule } from './../pages/message/message.module';
 
 @NgModule({
-  declarations: [
-    MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
-  ],
+  declarations: [MyApp, AboutPage, ContactPage, HomePage, TabsPage],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    ComoVotarPageModule,
+    RequisitosPageModule,
+    ListaPageModule,
+    MessagePageModule,
   ],
   bootstrap: [IonicApp],
-  entryComponents: [
-    MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
-  ],
+  entryComponents: [MyApp, AboutPage, ContactPage, HomePage, TabsPage],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
-  ]
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    SocialSharing,
+  ],
 })
 export class AppModule {}

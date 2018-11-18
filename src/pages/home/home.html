@@ -1,17 +1,42 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content class="withPadding">
+  <div class="row">
+    <ion-col col-12 text-center (click)="logoAction()">
+      <img id="logo" src="assets/imgs/logo.png">
+    </ion-col>
+    <ion-col col-12>
+      <div class="eleccionesTop shadow fade ">
+        <h1>
+          <span class="small"> Faltan</span>
+          <br>
+          <span style="width: 100%"> {{ diasRestantes }}</span>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+        </h1>
+      </div>
+    </ion-col>
+  </div>
+  <div class="botonera">
+    <div class="row">
+      <ion-col col-6>
+        <div class="option green shadow fade1" (click)="irVotar()">
+          <ion-icon class="floating" name="ios-arrow-dropright"></ion-icon>
+          <h4 class="small">¿Cómo</h4>
+          <h1 class="big">Votar?</h1>
+        </div>
+      </ion-col>
+      <ion-col col-6>
+        <div class="option blue shadow fade1">
+          <ion-icon class="floating" name="ios-arrow-dropright"></ion-icon>
+          <h4 class="small">Conocé a la</h4>
+          <h1 class="big">Lista 19</h1>
+        </div>
+      </ion-col>
+      <ion-col col-12>
+        <div class="option mainDark shadow fade2">
+          <ion-icon class="floating" name="ios-arrow-dropright"></ion-icon>
+          <h4 class="small">Te</h4>
+          <h1 class="big">Escuchamos</h1>
+        </div>
+      </ion-col>
+    </div>
+  </div>
 </ion-content>

@@ -1,3 +1,83 @@
 page-contact {
+  .scroll-content {
+    padding: 5px !important;
+  }
 
+  .eleccionesTop {
+    background: linear-gradient(rgba(240, 5, 126, 0.7), rgba(240, 5, 126, 1)), url('../assets/imgs/elecciones.jpg');
+    //  background: map-get($colors, main);
+    background-size: cover;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 8px;
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //border-bottom-left-radius: 50% 20%;
+    //border-bottom-right-radius: 50% 20%;
+  }
+
+  .buttonContainer {
+    width: 100%;
+    text-align: center;
+    margin-top: -25px;
+  }
+
+  .option {
+    border-radius: 8px;
+    height: 135px;
+    padding: 15px;
+    color: white;
+
+    .floating {
+      float: right;
+      top: 20px;
+      right: 25px;
+      font-size: 25px;
+    }
+
+    .small {
+      padding-top: 50px;
+      margin-bottom: 0px;
+      font-size: 15px;
+    }
+
+    .big {
+      margin-top: 0px;
+    }
+  }
+
+  .small {
+    font-size: 16px;
+  }
+
+  .green {
+    background-image: linear-gradient(rgba(83, 0, 147, 0.795), rgba(83, 0, 147, 0.5)), url('../assets/imgs/padron.jpg');
+    background-size: cover;
+  }
+
+  .blue {
+    background-image: linear-gradient(rgba(0, 136, 54, 0.7), rgba(0, 136, 54, 0.8)), url('../assets/imgs/logo.png');
+    background-size: cover;
+
+  }
+
+  .main {
+    background: map-get($colors, main);
+  }
+
+  .mainDark {
+    background-image: linear-gradient(rgba(106, 63, 234, 0.365), rgba(106, 63, 234, 0.79)), url('../assets/imgs/manos.jpeg');
+    background-size: cover;
+  }
+
+  .instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+  }
 }
