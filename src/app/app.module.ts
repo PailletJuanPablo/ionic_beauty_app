@@ -15,6 +15,10 @@ import { RequisitosPageModule } from '../pages/requisitos/requisitos.module';
 import { ListaPageModule } from './../pages/lista/lista.module';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { MessagePageModule } from './../pages/message/message.module';
+import { SumarsePageModule } from './../pages/sumarse/sumarse.module';
+import { PropuestasProvider } from '../providers/propuestas/propuestas';
+import { HttpClientModule } from '@angular/common/http';
+import { DetallePropuestaPageModule } from './../pages/detalle-propuesta/detalle-propuesta.module';
 
 @NgModule({
   declarations: [MyApp, AboutPage, ContactPage, HomePage, TabsPage],
@@ -25,6 +29,9 @@ import { MessagePageModule } from './../pages/message/message.module';
     RequisitosPageModule,
     ListaPageModule,
     MessagePageModule,
+    SumarsePageModule,
+    HttpClientModule,
+    DetallePropuestaPageModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [MyApp, AboutPage, ContactPage, HomePage, TabsPage],
@@ -33,6 +40,7 @@ import { MessagePageModule } from './../pages/message/message.module';
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     SocialSharing,
+    PropuestasProvider,
   ],
 })
 export class AppModule {}

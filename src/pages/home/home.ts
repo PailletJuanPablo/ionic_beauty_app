@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController, Platform, App, ToastController } from 'ionic-angular';
-import { ComoVotarPage } from './../como-votar/como-votar';
-import { TabsPage } from './../tabs/tabs';
 
 @Component({
   selector: 'page-home',
@@ -34,7 +32,6 @@ export class HomePage {
     let countDownDate = new Date('December 15, 2018 08:00:00').getTime();
     // Get todays date and time
     let now = new Date().getTime();
-    console.log(countDownDate);
 
     // Find the distance between now and the count down date
     let distance = countDownDate - now;
@@ -65,5 +62,11 @@ export class HomePage {
 
   logoAction() {
     this.navCtrl.popToRoot();
+  }
+  irLista() {
+    this.navCtrl.parent.select(3);
+  }
+  irMensaje() {
+    this.navCtrl.parent.select(4);
   }
 }

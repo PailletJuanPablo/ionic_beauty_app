@@ -5,6 +5,22 @@
     </ion-col>
   </div>
   <div text-center>
-    <h1>Te escuchamos</h1>
+    <h1 class="fade">Te escuchamos</h1>
   </div>
+  <ion-row>
+    <ion-col col-12>
+      <div class="option main shadow fade1" (click)="irSumarse()">
+        <ion-icon class="floating" name="ios-arrow-dropright"></ion-icon>
+        <h4 class="small">Queremos que te </h4>
+        <h1 class="big">Sumes</h1>
+      </div>
+    </ion-col>
+    <ion-col col-12>
+      <div class="option mainDark shadow fade2" (click)="irMensaje()">
+        <ion-icon class="floating" name="ios-arrow-dropright"></ion-icon>
+        <h4 class="small">Envianos tu</h4>
+        <h1 class="big">Opinión</h1>
+      </div>
+    </ion-col>
+  </ion-row>
 </ion-content>

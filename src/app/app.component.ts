@@ -53,8 +53,8 @@ export class MyApp {
         } else if (typeof activeView.instance.backButtonAction === 'function') {
           activeView.instance.backButtonAction();
         } else {
-          console.log();
-          if (nav.getActive().name == 'HomePage') {
+          console.log(nav.getActive());
+          if (nav.getActive().index == 0) {
             //
             if (
               new Date().getTime() - this.lastTimeBackPress <
@@ -67,7 +67,7 @@ export class MyApp {
                 .create({
                   message:
                     'Presiona el botón de volver nuevamente para cerrar la App',
-                  duration: 2000,
+                  duration: 1000,
                   position: 'bottom',
                 })
                 .present()

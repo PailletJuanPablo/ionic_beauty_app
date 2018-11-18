@@ -1,10 +1,32 @@
 <ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
   <div class="row">
     <ion-col col-12 text-center (click)="logoAction()">
       <img id="logo" src="assets/imgs/logo.png" />
     </ion-col>
   </div>
   <div text-center>
-    <h1>Nuestra Lista</h1>
+    <h1 class="fade">Nuestras Propuestas</h1>
+  </div>
+
+  <div>
+    <ion-row>
+      <ion-col col-12 *ngFor="let propuesta of propuestas" (click)="irPropuesta(propuesta)">
+        <ion-card class="fade4">
+          <div class="imgContainer">
+            <img [src]="propuesta.featured_image_url" class="imageLazy">
+          </div>
+          <ion-card-content>
+            <ion-card-title class="cardTitle">
+              {{ propuesta.title.rendered }}
+            </ion-card-title>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+    </ion-row>
   </div>
 </ion-content>

@@ -36,7 +36,11 @@
     "es6-promise-plugin": "^4.2.2",
     "ionic-angular": "3.9.2",
     "ionicons": "3.0.0",
+    "ng-lazyload-image": "^5.0.0",
+    "ng2-scrollreveal": "^1.0.1",
+    "ngx-scrollreveal": "^3.0.0",
     "rxjs": "5.5.11",
+    "scrollreveal": "^4.0.5",
     "sw-toolbox": "3.6.0",
     "zone.js": "0.8.26"
   },

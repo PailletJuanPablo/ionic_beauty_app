@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: Nova;
+  font-family: Nova_bold;
   font-style: bold;
   src: url(../assets/font/nova_bold.otf);
 }
@@ -36,8 +36,15 @@ h4,
 h5,
 h6,
 span,
-bold {
-  font-family: Nova !important;
+bold,
+.card {
+  font-family: Nova_bold !important;
+}
+
+p,
+ul,
+li {
+  font-family: Nova
 }
 
 @keyframes fadeInUp {
@@ -78,6 +85,13 @@ bold {
 .fade3 {
   animation: fadeInUp;
   animation-duration: 1300ms !important;
+  transition: all 500ms cubic-bezier(0.420, 0.000, 1.000, 1.000);
+  /* ease-in */
+}
+
+.fade4 {
+  animation: fadeInUp;
+  animation-duration: 300ms !important;
   transition: all 500ms cubic-bezier(0.420, 0.000, 1.000, 1.000);
   /* ease-in */
 }

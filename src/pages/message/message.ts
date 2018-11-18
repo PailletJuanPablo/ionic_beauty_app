@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { SumarsePage } from './../sumarse/sumarse';
 
 /**
  * Generated class for the MessagePage page.
@@ -14,12 +15,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'message.html',
 })
 export class MessagePage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MessagePage');
   }
-
+  logoAction() {
+    this.navCtrl.parent.select(0);
+  }
+  irSumarse() {
+    this.navCtrl.push(SumarsePage);
+  }
 }
